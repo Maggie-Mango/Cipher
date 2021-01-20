@@ -25,6 +25,13 @@ function reverse(response) {
   return response.split("").reverse().join("")
 }
 const response = prompt("What did you do for dinner tonight?");
-alert(reverse(response));
+$(document).ready(function() {
+  $('.black').click(function() {
+    alert(response);
+  });
+  $('.white').click(function() {
+    alert(reverse(response))
+  });
+});
 
 //response.substring(1,(response.length-1)) 
