@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
 
   $('.white').click(function() {
-    alert(fourth(response))
+    alert(reverse(response))
   });
 
 });
