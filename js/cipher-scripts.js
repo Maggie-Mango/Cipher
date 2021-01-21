@@ -1,3 +1,14 @@
+const response = prompt("What did you do for dinner tonight?");
+$(document).ready(function() {
+  $('.black').click(function() {
+    alert(response);
+  });
+
+  $('.white').click(function() {
+    alert(reverse(response))
+  });
+});
+
 function capitalize(response) {
   return response[0].toUpperCase() + response.charAt(response.length - 1).toUpperCase()
 }
@@ -24,16 +35,5 @@ function reverse(response) {
   response = fourth(response)
   return response.split("").reverse().join("")
 }
-const response = prompt("What did you do for dinner tonight?");
 
-$(document).ready(function() {
-  $('.black').click(function() {
-    alert(response);
-  });
-
-  $('.white').click(function() {
-    alert(reverse(response))
-  });
-
-});
   
